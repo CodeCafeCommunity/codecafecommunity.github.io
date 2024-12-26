@@ -1,6 +1,5 @@
 name: Report a Bug
 description: File a bug/issue
-title: "<title>"
 labels: ["Bug"]
 body:
   - type: textarea
