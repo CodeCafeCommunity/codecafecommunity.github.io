@@ -27,4 +27,3 @@ How to embed:
 - [ ] Code has been tested and does not produce errors
 - [ ] Code is readable and formatted
 - [ ] There isn't any unnecessary commented-out code
-- [ ] If you have made any UI changes, include a screenshot of them.
