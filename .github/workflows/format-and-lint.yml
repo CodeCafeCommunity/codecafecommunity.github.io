@@ -8,10 +8,11 @@ concurrency:
   cancel-in-progress: true
 jobs:
   lint:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.repository != github.event.pull_request.head.repo.full_name)
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [23]
     steps:
       - name: Check out branch (pull request)
         uses: actions/checkout@v4
