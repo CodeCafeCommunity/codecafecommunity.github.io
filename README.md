@@ -27,6 +27,7 @@ run:
 ```bash
 nvm use 23.5.0
 ```
+
 ### Install Dependencies
 
 Once the correct Node.js version is set up, install the project's dependencies:
@@ -35,7 +36,7 @@ Once the correct Node.js version is set up, install the project's dependencies:
 npm install
 ```
 
-###  Start the Development Server
+### Start the Development Server
 
 ```bash
 npm run dev
