@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="py-16 bg-secondary flex justify-around">
       <div className="footer-container text-primary">
         <h4 className="text-xl font-bold flex items-center gap-2">
-          <Code size={48} className="text-accent" />
+          <Code size={48} className="text-primary" />
           Code Cafe
         </h4>
         <p className="text-sm">Your home for coding and community</p>

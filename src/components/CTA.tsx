@@ -13,7 +13,7 @@ export default function CTA() {
           developer community.
         </p>
         <a
-          className="discord-button bg-primary px-8 py-4 rounded-lg border-2 border-primary text-secondary hover:bg-secondary hover:text-primary transition-all"
+          className="discord-button bg-primary px-8 py-4 rounded-lg border-2 border-primary text-secondary hover:bg-secondary hover:text-primary transition-all hover:no-underline"
           href="https://discord.gg/code-cafe"
         >
           Join Code Cafe

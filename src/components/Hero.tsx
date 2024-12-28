@@ -23,10 +23,10 @@ export default function Hero() {
         />
       </div>
       <div className="flex gap-10 my-6">
-        <button className="px-8 py-4 rounded-lg border-2 border-secondary hover:border-secondary text-secondary hover:bg-secondary hover:text-primary transition-all">
+        <button className="px-8 py-4 text-primary rounded-lg border-2 border-secondary hover:border-secondary bg-secondary hover:text-secondary hover:bg-primary transition-all">
           Join us
         </button>
-        <button className="px-8 py-4 rounded-lg border-2 border-secondary hover:border-secondary text-secondary hover:bg-secondary hover:text-primary transition-all">
+        <button className="px-8 py-4 text-primary rounded-lg border-2 border-secondary hover:border-secondary bg-secondary hover:text-secondary hover:bg-primary transition-all">
           Learn more
         </button>
       </div>
