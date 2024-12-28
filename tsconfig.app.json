@@ -25,5 +25,5 @@
     "rootDirs": [".", "./.react-router/types"],
     "verbatimModuleSyntax": true
   },
-  "include": ["src", ".react-router/types/**/*"]
+  "include": ["src", ".react-router/types/**/*", "react-router.config.ts"]
 }

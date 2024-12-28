@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "react-router typegen && tsc",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx}'"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,md}'"
   },
   "dependencies": {
     "@react-router/node": "^7.1.1",

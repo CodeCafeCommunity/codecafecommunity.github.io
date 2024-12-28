@@ -12,6 +12,7 @@ export async function clientLoader() {
 
   return {
     title: "About page",
+    data
   };
 }
 
@@ -24,6 +25,8 @@ export default function Component({ loaderData }: { loaderData: LoaderData }) {
     <>
       <h1 className="mb-6">{loaderData.title}</h1>
       <Link to="/">Home</Link>
+      <p className="mt-6">Loaded data:</p>
+      <pre className="bg-[black] rounded-xl border border-secondary p-6 mt-3">{JSON.stringify(loaderData, null, 2)}</pre>
     </>
   );
 }
