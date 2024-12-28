@@ -42,7 +42,6 @@ npm install
 npm run dev
 ```
 
-
 ## Type Safety
 
 React Router will generate types for each route to provide type safety for the route module exports.
