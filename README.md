@@ -41,3 +41,18 @@ npm install
 ```bash
 npm run dev
 ```
+
+
+## Type Safety
+
+React Router will generate types for each route to provide type safety for the route module exports.
+
+To generate types for routes, run the following command:
+
+```bash
+npm run typecheck
+```
+
+This will add types to the `./react-router/types` folder.
+
+[Read more](https://reactrouter.com/explanation/type-safety) on type safety with React Router.
