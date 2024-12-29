@@ -3,34 +3,25 @@ import { Code } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="bg-secondary py-4 flex justify-around items-center">
+    <header className="sticky top-0 bg-primary/80 backdrop-blur-lg py-4 flex justify-around items-center">
       <div className="flex gap-2 items-center">
-        <Code size={48} className="text-primary" />
-        <h1 className="text-primary text-3xl">Code Cafe</h1>
+        <Code size={48} className="text-secondary" />
+        <h1 className="text-secondary text-3xl">Code Cafe</h1>
       </div>
       <nav>
-        <ul className="flex list-none gap-3">
+        <ul className="flex list-none gap-3 text-secondary">
           <li>
-            <NavLink
-              className="text-primary hover:text-accent transition-all"
-              to="/"
-            >
+            <NavLink className="hover:text-accent" to="/">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="text-primary hover:text-accent transition-colors"
-              to="/about"
-            >
+            <NavLink className="hover:text-accent" to="/about">
               About Us
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="text-primary hover:text-accent transition-colors"
-              to="/events"
-            >
+            <NavLink className="hover:text-accent" to="/events">
               Events
             </NavLink>
           </li>

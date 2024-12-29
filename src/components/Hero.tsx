@@ -2,14 +2,14 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[85vh] bg-primary flex flex-col justify-evenly items-center text-accent py-8"
+      className="min-h-[80vh] bg-primary flex flex-col justify-evenly items-center text-accent py-8"
     >
       <div className="text-center flex items-center justify-center flex-wrap xl:flex-nowrap p-8 lg:p-20">
         <div className="flex flex-col items-center">
           <h2 className="text-5xl md:text-6xl lg:text-8xl mb-4">
             Where Code Meets Community
           </h2>
-          <p className="text-2xl max-w-prose">
+          <p className="font-mono text-2xl max-w-prose">
             Join our vibrant community of developers, share knowledge and grow
             together in a welcoming environment.
           </p>
