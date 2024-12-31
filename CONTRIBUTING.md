@@ -30,7 +30,7 @@ General guidance for contributors. For maintainer-specific info, see the [For Ma
   - If an issue has been assigned and in progress for a long time, you may comment on the issue and ask the assignee if they are still working on it.
     If they are not, you may ask a maintainer to assign the issue to you.
 - Do not work on more than one issue ticket at a time.
-  - Doing takes away opportunities for other contributors, and can lead to bottlenecks in the project's ability to move forward.
+  - Doing so takes away opportunities for other contributors, and can lead to bottlenecks in the project's ability to move forward.
 - Do not get upset if it takes time for maintainers to review your PR. Maintainers are all volunteers doing this in our free time and sometimes they are busy.
 - Do not open a PR for work that is in progress or that you want feedback on before completing an issue.
   - If you would like feedback on anything that is in an unfinished or partially-working state, open a [Draft Pull Request](https://github.blog/news-insights/product-news/introducing-draft-pull-requests/) instead, and let the maintainers know that you would like their thoughts on what you have so far.
