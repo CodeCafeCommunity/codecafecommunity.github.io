@@ -23,6 +23,8 @@ General guidance for contributors. For maintainer-specific info, see the [For Ma
   - For example, if you are working on issue number 42 and performing a refactor on the navbar component, a good branch name would be `42-refactor-navbar-component`.
 - Ensure that your code works, tests pass and your code is properly linted and formatted prior to opening a PR.
   - We use a pre-commit hook on this project to help facilitate this. See the [Code Quality](#code-quality) section below for more information.
+- Once your PR is opened and you are ready for a review, request a review from the website team.
+  - To do this, navigate to your PR, click "Reviewers" on the right side of the page and select the `@CodeCafeCommunity/website` team.
 
 ### Don't :x:
 
