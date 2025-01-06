@@ -3,7 +3,7 @@ import { Code } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="py-16 bg-secondary flex justify-around">
+    <footer className="py-16 bg-background flex justify-around">
       <div className="footer-container text-primary">
         <h4 className="text-xl font-bold flex items-center gap-2">
           <Code size={48} className="text-primary" />

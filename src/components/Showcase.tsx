@@ -2,8 +2,8 @@ import { Smile } from "lucide-react";
 
 export default function Showcase() {
   return (
-    <section className="flex flex-col items-center bg-secondary py-20">
-      <h2 className="text-xl md:text-xl lg:text-4xl mb-6">
+    <section className="flex flex-col items-center bg-background py-20">
+      <h2 className="text-xl md:text-xl lg:text-4xl mb-6 text-primary">
         Community Showcase
       </h2>
       <div className="flex flex-1">

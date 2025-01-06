@@ -2,7 +2,7 @@ import { Users, CircleHelp, BookOpen } from "lucide-react";
 
 export default function Features() {
   return (
-    <section className="bg-secondary py-20">
+    <section className="bg-background py-20">
       <div className="outer">
         <div className="inner">
           <div className="flex-1 flex flex-col items-center text-center py-6">
