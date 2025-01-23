@@ -5,8 +5,8 @@ export default function Header() {
     <header className="sticky top-0 bg-primary/80 backdrop-blur-lg py-4 flex justify-around items-center">
       <NavLink className="flex gap-2 items-center" to="/">
         <img
-          className="w-16"
-          src={"/images/coffee_cup.jpg"}
+          className="w-12 pr-2"
+          src={"/images/coffee_cup.png"}
           alt="Code Cafe Logo"
         />
         <h1 className="text-secondary text-3xl">Code Cafe</h1>
