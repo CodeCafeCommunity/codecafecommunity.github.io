@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  background-color: #240e1f;
-}
-
 #hero {
   background-color: rgb(36, 14, 31);
   background-image: radial-gradient(
