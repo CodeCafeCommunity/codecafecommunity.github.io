@@ -2,9 +2,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
-import Layout from "./components/Layout.tsx";
-import Home from "./routes/Home.tsx";
-import About from "./routes/About.tsx";
+import Layout from "./components/Layout";
+import Home from "./routes/Home";
+import About from "./routes/About";
 
 const root = document.getElementById("root");
 
