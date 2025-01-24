@@ -3,8 +3,8 @@ import { Users, CircleHelp, BookOpen } from "lucide-react";
 export default function Features() {
   return (
     <section className="bg-background py-20">
-      <div className="outer">
-        <div className="inner">
+      <div className="outer mx-auto border border-solid border-transparent rounded-2xl max-w-6xl p-2.5">
+        <div className="inner rounded-lg flex gap-x-6 py-6 px-4">
           <div className="flex-1 flex flex-col items-center text-center py-6">
             <Users size={48} className="text-accent mb-2" />
             <h3 className="text-secondary text-xl mb-2 font-mono">

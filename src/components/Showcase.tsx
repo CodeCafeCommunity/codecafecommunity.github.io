@@ -6,9 +6,9 @@ export default function Showcase() {
       <h2 className="text-xl md:text-xl lg:text-4xl mb-6 text-primary">
         Community Showcase
       </h2>
-      <div className="flex flex-1">
-        <div className="outer">
-          <div className="inner min-h-full">
+      <div className="flex flex-1 gap-1 mx-4">
+        <div className="outer mx-auto border border-solid border-transparent rounded-2xl max-w-6xl p-2.5">
+          <div className="inner rounded-lg py-6 px-4">
             <div className="flex-1 flex flex-col text-center px-6 py-6">
               <div className="flex flex-1 justify-start">
                 <Smile size={48} className="text-accent mb-2 mr-4" />
@@ -24,8 +24,8 @@ export default function Showcase() {
             </div>
           </div>
         </div>
-        <div className="outer">
-          <div className="inner min-h-full">
+        <div className="outer mx-auto border border-solid border-transparent rounded-2xl max-w-6xl p-2.5">
+          <div className="inner rounded-lg py-6 px-4">
             <div className="flex-1 flex flex-col text-center px-6 py-6">
               <div className="flex flex-1 justify-start">
                 <Smile size={48} className="text-accent mb-2 mr-4" />
@@ -41,8 +41,8 @@ export default function Showcase() {
             </div>
           </div>
         </div>
-        <div className="outer">
-          <div className="inner min-h-full">
+        <div className="outer mx-auto border border-solid border-transparent rounded-2xl max-w-6xl p-2.5">
+          <div className="inner rounded-lg py-6 px-4">
             <div className="flex-1 flex flex-col text-center px-6 py-6">
               <div className="flex flex-1 justify-start">
                 <Smile size={48} className="text-accent mb-2 mr-4" />
@@ -59,8 +59,6 @@ export default function Showcase() {
           </div>
         </div>
       </div>
-      {/*  </div>*/}
-      {/*</div>*/}
     </section>
   );
 }
