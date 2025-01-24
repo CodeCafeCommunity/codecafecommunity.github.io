@@ -1,7 +1,7 @@
-import Hero from "./Hero.tsx";
-import Features from "./Features.tsx";
-import CTA from "./CTA.tsx";
-import Showcase from "./Showcase.tsx";
+import Hero from "./Hero";
+import Features from "./Features";
+import CTA from "./CTA";
+import Showcase from "./Showcase";
 
 export default function Home() {
   return (
