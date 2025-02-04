@@ -1,16 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-
-interface JsonData {
-  pageName: string;
-  entries: Entry[];
-}
-
-interface Entry {
-  title: string;
-  url: string;
-  tags: string[];
-}
+import { JsonData } from "./types";
+import ResourceCard from "./ResourceCard";
 
 const ResourcePage = () => {
   const { category } = useParams();
@@ -41,9 +32,17 @@ const ResourcePage = () => {
   if (data) {
     return (
       <>
-        <section className="h-2/3 bg-background">
-          <h3 className="text-xl text-accent">{data.pageName}</h3>
-          {data.entries.map((e) => e.title)}
+        <section className="h-2/3 w-full bg-background">
+          <h3 className="my-12 text-center text-4xl text-primary">
+            {data.pageName}
+          </h3>
+          <div className="flex w-full justify-center">
+            <div className="mx-4 grid grid-cols-3 gap-x-4 sm:w-5/6 xl:w-3/4">
+              {data.entries.map((e) => (
+                <ResourceCard entry={e} key={e.title} />
+              ))}
+            </div>
+          </div>
         </section>
       </>
     );
