@@ -1,0 +1,20 @@
+{
+  "pageName": "CSS Resources",
+  "entries": [
+    {
+      "title": "CSS Official Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "tags": ["css", "official docs"]
+    },
+    {
+      "title": "Tailwind Official Docs",
+      "url": "https://tailwindcss.com",
+      "tags": ["css", "official docs", "tailwind"]
+    },
+    {
+      "title": "CSS Flexbox Layout Guide",
+      "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+      "tags": ["css", "cheatsheet"]
+    }
+  ]
+}
