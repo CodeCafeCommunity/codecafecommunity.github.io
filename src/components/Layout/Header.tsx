@@ -9,7 +9,7 @@ export default function Header() {
           src={"/images/coffee_cup.png"}
           alt="Code Cafe Logo"
         />
-        <h1 className="text-3xl text-secondary">Code Cafe</h1>
+        <h1 className="text-3xl text-secondary">Code Café</h1>
       </NavLink>
       <nav>
         <ul className="flex list-none gap-3 text-secondary">
@@ -21,6 +21,11 @@ export default function Header() {
           <li>
             <NavLink className="hover:text-accent" to="/about">
               About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="hover:text-accent" to="/resources">
+              Resources
             </NavLink>
           </li>
           <li>
