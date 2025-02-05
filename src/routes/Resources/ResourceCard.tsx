@@ -2,7 +2,7 @@ import { Entry } from "./types";
 
 const ResourceCard = ({ entry }: { entry: Entry }) => {
   return (
-    <div className="min-h-24 min-w-56 rounded-md bg-slate-400 text-center shadow-lg shadow-gray-600 hover:shadow-2xl hover:shadow-gray-600">
+    <div className="min-h-24 w-96 rounded-md bg-slate-400 text-center shadow-lg shadow-gray-600 hover:shadow-2xl hover:shadow-gray-600">
       <a
         href={entry.url}
         target="_blank"

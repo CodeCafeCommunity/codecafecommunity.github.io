@@ -37,7 +37,7 @@ const ResourcePage = () => {
             {data.pageName}
           </h3>
           <div className="flex w-full justify-center">
-            <div className="mx-4 grid grid-cols-3 gap-x-4 sm:w-5/6 xl:w-3/4">
+            <div className="mx-4 flex flex-wrap justify-center gap-6 sm:w-5/6 xl:w-3/4">
               {data.entries.map((e) => (
                 <ResourceCard entry={e} key={e.title} />
               ))}
