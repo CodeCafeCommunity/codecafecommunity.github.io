@@ -2,21 +2,21 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[8vh] bg-primary flex flex-col justify-evenly items-center text-accent py-8"
+      className="flex min-h-[8vh] flex-col items-center justify-evenly bg-primary py-8 text-accent"
     >
-      <div className="text-center flex items-center justify-center flex-wrap xl:flex-nowrap p-8 lg:p-5">
+      <div className="flex flex-wrap items-center justify-center p-8 text-center lg:p-5 xl:flex-nowrap">
         <div className="flex flex-col items-center">
-          <h2 className="text-xl md:text-xl lg:text-4xl mb-2">
+          <h2 className="mb-2 text-xl md:text-xl lg:text-4xl">
             Where Code Meets Community
           </h2>
-          <p className="font-mono text-lg max-w-prose">
+          <p className="max-w-prose font-mono text-lg">
             Join our vibrant community of developers, share knowledge and grow
             together in a welcoming environment.
           </p>
         </div>
       </div>
-      <div className="flex gap-10 my-6">
-        <button className="px-8 py-4 text-primary rounded-lg border-2 border-secondary hover:border-secondary bg-secondary hover:text-secondary hover:bg-primary transition-all">
+      <div className="my-6 flex gap-10">
+        <button className="rounded-lg border-2 border-secondary bg-secondary px-8 py-4 text-primary transition-all hover:border-secondary hover:bg-primary hover:text-secondary">
           Join us
         </button>
       </div>

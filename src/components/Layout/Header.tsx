@@ -2,14 +2,14 @@ import { NavLink } from "react-router";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 bg-primary/80 backdrop-blur-lg py-4 flex justify-around items-center">
-      <NavLink className="flex gap-2 items-center" to="/">
+    <header className="sticky top-0 flex items-center justify-around bg-primary/80 py-4 backdrop-blur-lg">
+      <NavLink className="flex items-center gap-2" to="/">
         <img
           className="w-12 pr-2"
           src={"/images/coffee_cup.png"}
           alt="Code Cafe Logo"
         />
-        <h1 className="text-secondary text-3xl">Code Cafe</h1>
+        <h1 className="text-3xl text-secondary">Code Cafe</h1>
       </NavLink>
       <nav>
         <ul className="flex list-none gap-3 text-secondary">

@@ -2,18 +2,18 @@ export default function CTA() {
   return (
     <section
       id="cta"
-      className="bg-primary flex justify-center items-center p-6 md:py-20"
+      className="flex items-center justify-center bg-primary p-6 md:py-20"
     >
-      <div className="cta-container bg-gradient-to-r from-accent to-secondary shadow-md rounded-3xl p-10 md:px-60 md:py-20 flex flex-col justify-evenly items-center text-primary">
-        <h2 className="text-3xl font-bold mb-4 text-center">
+      <div className="cta-container flex flex-col items-center justify-evenly rounded-3xl bg-gradient-to-r from-accent to-secondary p-10 text-primary shadow-md md:px-60 md:py-20">
+        <h2 className="mb-4 text-center text-3xl font-bold">
           Ready to Join Our Community?
         </h2>
-        <p className="text-center text-lg mb-6">
+        <p className="mb-6 text-center text-lg">
           Start your journey with Code Cafe today and become part of a thriving
           developer community.
         </p>
         <a
-          className="discord-button bg-primary px-8 py-4 rounded-lg border-2 border-primary text-secondary hover:bg-secondary hover:text-primary transition-all hover:no-underline"
+          className="discord-button rounded-lg border-2 border-primary bg-primary px-8 py-4 text-secondary transition-all hover:bg-secondary hover:text-primary hover:no-underline"
           href="https://discord.gg/code-cafe"
         >
           Join Code Cafe
