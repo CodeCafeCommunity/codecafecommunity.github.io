@@ -9,7 +9,17 @@
     {
       "title": "Tailwind Official Docs",
       "url": "https://tailwindcss.com",
-      "tags": ["css", "official docs", "tailwind", "test1", "test2", "test3"]
+      "tags": [
+        "css",
+        "official docs",
+        "tailwind",
+        "test1",
+        "test2",
+        "test3",
+        "test4",
+        "test5",
+        "test6"
+      ]
     },
     {
       "title": "CSS Flexbox Layout Guide",
