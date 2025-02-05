@@ -4,11 +4,11 @@ interface Props {
 
 export default function StaffCard({ staff }: Props) {
   return (
-    <div className="outer mx-auto border border-solid border-transparent rounded-2xl max-h-60 p-2.5">
-      <div className="inner rounded-lg py-6 px-4 text-secondary flex flex-col">
+    <div className="outer mx-auto max-h-60 rounded-2xl border border-solid border-transparent p-2.5">
+      <div className="inner flex flex-col rounded-lg px-4 py-6 text-secondary">
         <div className="flex items-center">
           <img
-            className="size-20 rounded-full mr-3"
+            className="mr-3 size-20 rounded-full"
             src={`/images/${staff.name.toLowerCase()}.png`}
             alt={staff.name}
           />
