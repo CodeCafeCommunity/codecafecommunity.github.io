@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { JsonData } from "./types";
+import { JsonData, Entry } from "./types";
 import ResourceCard from "./ResourceCard";
+import { sortEntries } from "./utils";
 
 const ResourcePage = () => {
   const { category } = useParams();
   const [data, setData] = useState<JsonData | null>(null);
+  const [entries, setEntries] = useState<Entry[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,14 +21,14 @@ const ResourcePage = () => {
       }
     };
 
-    fetchData().then(
-      (json) => {
-        setData(json);
-      },
-      () => {
-        setData({ pageName: "", entries: [] });
-      },
-    );
+    fetchData()
+      .then((json) => {
+        if (json.entries.length > 0) {
+          setData(json);
+          setEntries(sortEntries(json.entries));
+        }
+      })
+      .catch(console.error);
   }, [category]);
 
   if (data) {
@@ -38,7 +40,7 @@ const ResourcePage = () => {
           </h3>
           <div className="flex w-full justify-center">
             <div className="mx-4 flex flex-wrap justify-center gap-6 sm:w-5/6 xl:w-3/4">
-              {data.entries.map((e) => (
+              {entries.map((e) => (
                 <ResourceCard entry={e} key={e.title} />
               ))}
             </div>
@@ -47,5 +49,7 @@ const ResourcePage = () => {
       </>
     );
   }
+
+  return <></>;
 };
 export default ResourcePage;
