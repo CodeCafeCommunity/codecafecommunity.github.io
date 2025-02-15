@@ -1,3 +1,5 @@
+import { Staff } from "./Staff";
+
 interface Props {
   staff: Staff;
 }

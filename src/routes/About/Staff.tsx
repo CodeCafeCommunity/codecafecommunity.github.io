@@ -1,7 +1,7 @@
 import StaffCard from "./StaffCard.tsx";
 import staff from "./staff-info.json";
 
-interface Staff {
+export interface Staff {
   name: string;
   preferredLanguage: string;
   bio: string;
