@@ -1,6 +1,13 @@
 import StaffCard from "./StaffCard.tsx";
 import staff from "./staff-info.json";
 
+interface Staff {
+  name: string;
+  preferredLanguage: string;
+  bio: string;
+  yearsExp: number;
+}
+
 export default function Staff() {
   return (
     <div className="bg-primary pb-12 pt-6">
