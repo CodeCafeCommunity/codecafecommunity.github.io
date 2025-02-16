@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex min-h-[8vh] flex-col items-center justify-evenly bg-primary py-8 text-accent"
+      className="flex flex-col items-center justify-evenly bg-primary py-8 text-accent"
     >
       <div className="flex flex-wrap items-center justify-center p-8 text-center lg:p-5 xl:flex-nowrap">
         <div className="flex flex-col items-center">
