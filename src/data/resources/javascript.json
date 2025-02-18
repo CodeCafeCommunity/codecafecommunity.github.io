@@ -1,0 +1,15 @@
+{
+  "pageName": "JavaScript Resources",
+  "entries": [
+    {
+      "title": "JavaScript Official Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "tags": ["javascript", "official docs"]
+    },
+    {
+      "title": "javacript.info",
+      "url": "https://javascript.info",
+      "tags": ["javascript", "crash course"]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-container text-primary">
         <h4 className="flex items-center gap-2 text-xl font-bold">
           <Code size={48} className="text-primary" />
-          Code Cafe
+          Code Café
         </h4>
         <p className="text-sm">Your home for coding and community</p>
       </div>
@@ -25,9 +25,19 @@ export default function Footer() {
       <div className="footer-container text-primary">
         <h4 className="mb-4 text-xl font-bold">Resources</h4>
         <ul className="list-none">
-          <li className="mb-3 text-sm">Documentation</li>
+          <li className="mb-3 text-sm">
+            <Link to="/resources">Resources</Link>
+          </li>
           <li className="mb-3 text-sm">Blog</li>
-          <li className="mb-3 text-sm">GitHub</li>
+          <li className="mb-3 text-sm">
+            <a
+              href="https://github.com/CodeCafeCommunity/codecafecommunity.github.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
