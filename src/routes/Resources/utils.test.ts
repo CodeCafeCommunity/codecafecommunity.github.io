@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { extractTags, sortEntries } from "./utils";
 
 describe("sortEntries", () => {
