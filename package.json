@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest --run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",
