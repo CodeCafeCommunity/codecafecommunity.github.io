@@ -7,6 +7,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Resources from "./routes/Resources";
 import ResourcePage from "./routes/Resources/ResourcePage";
+import Events from "./routes/Events";
 
 const root = document.getElementById("root");
 
@@ -20,6 +21,7 @@ if (root) {
             <Route path="/about" element={<About />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/resources/:category" element={<ResourcePage />} />
+            <Route path="/events" element={<Events />} />
           </Route>
         </Routes>
       </BrowserRouter>
