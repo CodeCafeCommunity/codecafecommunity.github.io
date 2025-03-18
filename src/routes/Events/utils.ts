@@ -1,16 +1,16 @@
-export const months: [string, number][] = [
-  ["January", 31],
-  ["February", 28],
-  ["March", 31],
-  ["April", 30],
-  ["May", 31],
-  ["June", 30],
-  ["July", 31],
-  ["August", 31],
-  ["September", 30],
-  ["October", 31],
-  ["November", 30],
-  ["December", 31],
+export const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 export const dayNames = [
   "Sunday",
@@ -26,4 +26,19 @@ export const changeMonth = (value: number, currentDate: Date): Date => {
   const newDate = currentDate;
   newDate.setMonth(currentDate.getMonth() + value);
   return newDate;
+};
+
+export const getViewRange = (year: number, month: number): [Date, Date] => {
+  const startDate = new Date(year, month, 1);
+  const endDate = new Date(year, month + 1, 0);
+
+  while (startDate.getDay() !== 0) {
+    startDate.setDate(startDate.getDate() - 1);
+  }
+
+  while (endDate.getDay() !== 6) {
+    endDate.setDate(endDate.getDate() + 1);
+  }
+
+  return [startDate, endDate];
 };

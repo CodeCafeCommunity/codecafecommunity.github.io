@@ -1,11 +1,64 @@
-import { useState } from "react";
-import { changeMonth, dayNames, months } from "./utils.ts";
-import times from "lodash/times";
+import { useEffect, useState } from "react";
+import { changeMonth, getViewRange, dayNames, months } from "./utils.ts";
 import DayCard from "./DayCard.tsx";
+import { Event, JsonData } from "./types.ts";
 
 export default function Events() {
-  // const today = new Date();
+  const today = new Date();
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
+  const [data, setData] = useState<Event[]>();
+  const [viewRange, setViewRange] = useState<[Date, Date]>(
+    getViewRange(today.getFullYear(), today.getMonth()),
+  );
+
+  function RenderDays(startDate: Date, endDate: Date) {
+    const totalDays =
+      Math.ceil(
+        (endDate.valueOf() - startDate.valueOf()) / (1000 * 60 * 60 * 24),
+      ) + 1;
+
+    return (
+      <>
+        {Array.from({ length: totalDays }, (_, index) => {
+          const currentDate = new Date(startDate);
+          currentDate.setDate(startDate.getDate() + index);
+          let events: Event[] = [];
+
+          if (data) {
+            events = data.filter(
+              (event) => event.date === currentDate.getDate(),
+            );
+          }
+
+          return (
+            <DayCard key={index} date={currentDate.getDate()} events={events} />
+          );
+        })}
+      </>
+    );
+  }
+
+  useEffect(() => {
+    setViewRange(
+      getViewRange(currentDate.getFullYear(), currentDate.getMonth()),
+    );
+
+    const fetchData = async (): Promise<JsonData> => {
+      const eventData = (await import(
+        `../../data/events/${currentDate.getFullYear().toString()}.json`
+      )) as { default: JsonData };
+
+      return eventData.default;
+    };
+
+    const currentMonth = months[currentDate.getMonth()];
+
+    fetchData()
+      .then((json) => {
+        setData(json[currentMonth]);
+      })
+      .catch(console.error);
+  }, [currentDate]);
 
   return (
     <main className="flex h-full w-full flex-col">
@@ -22,8 +75,13 @@ export default function Events() {
             >
               &#60;
             </button>
-            <span className="mx-12 text-3xl">
-              {months[currentDate.getMonth()][0]}
+            <span
+              className="mx-12 text-3xl"
+              onClick={() => {
+                console.log(data);
+              }}
+            >
+              {`${months[currentDate.getMonth()]} ${currentDate.getFullYear().toString()}`}
             </span>
             <button
               className="text-3xl"
@@ -43,9 +101,7 @@ export default function Events() {
             ))}
           </div>
           <div className="grid w-full grid-cols-7 gap-4">
-            {times(months[currentDate.getMonth()][1], (i) => (
-              <DayCard key={i} date={i + 1} />
-            ))}
+            {RenderDays(viewRange[0], viewRange[1])}
           </div>
         </div>
       </section>
