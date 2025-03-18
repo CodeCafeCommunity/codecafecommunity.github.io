@@ -5,3 +5,5 @@ export interface Event {
   host: string;
   description: string;
 }
+
+export type JsonData = Record<string, Event[]>;
