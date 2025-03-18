@@ -2,7 +2,27 @@
   "March": [
     {
       "title": "Weekly Exercism Sessions",
-      "date": "March 31st 2025, 11:00",
+      "date": 31,
+      "host": "Cykotech",
+      "description": "I'll be tackling Exercism learning paths from start to finish! Whether you're a beginner looking to learn alongside me or an experienced dev wanting to sharpen your skills, you're welcome to join the journey. I'll be working through the C# learning path on Exercism, working through challenges live. Once I complete it, the community will get to vote on the next language I take on!\n\nCome hang out, ask questions, and level up your coding skills together!"
+    }
+  ],
+  "April": [
+    {
+      "title": "Weekly Exercism Sessions",
+      "date": 7,
+      "host": "Cykotech",
+      "description": "I'll be tackling Exercism learning paths from start to finish! Whether you're a beginner looking to learn alongside me or an experienced dev wanting to sharpen your skills, you're welcome to join the journey. I'll be working through the C# learning path on Exercism, working through challenges live. Once I complete it, the community will get to vote on the next language I take on!\n\nCome hang out, ask questions, and level up your coding skills together!"
+    },
+    {
+      "title": "Weekly Exercism Sessions",
+      "date": 14,
+      "host": "Cykotech",
+      "description": "I'll be tackling Exercism learning paths from start to finish! Whether you're a beginner looking to learn alongside me or an experienced dev wanting to sharpen your skills, you're welcome to join the journey. I'll be working through the C# learning path on Exercism, working through challenges live. Once I complete it, the community will get to vote on the next language I take on!\n\nCome hang out, ask questions, and level up your coding skills together!"
+    },
+    {
+      "title": "Weekly Exercism Sessions",
+      "date": 21,
       "host": "Cykotech",
       "description": "I'll be tackling Exercism learning paths from start to finish! Whether you're a beginner looking to learn alongside me or an experienced dev wanting to sharpen your skills, you're welcome to join the journey. I'll be working through the C# learning path on Exercism, working through challenges live. Once I complete it, the community will get to vote on the next language I take on!\n\nCome hang out, ask questions, and level up your coding skills together!"
     }
